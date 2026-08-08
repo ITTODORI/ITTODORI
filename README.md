@@ -1,4 +1,4 @@
-## Hi there 👋
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=I'm+iMen+dude+it's+username)](https://git.io/typing-svg)
 
 <!--
 **ITTODORI/ITTODORI** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
