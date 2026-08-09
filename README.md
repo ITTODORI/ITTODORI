@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=750&lines=I'm+a+self-taught+passionate+Software+Developer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=40CA71&width=750&lines=I'm+a+self-taught+passionate+Software+Developer)](https://git.io/typing-svg)
 ##### Language
 [![My Skills](https://skillicons.dev/icons?i=php,ts,laravel,react,python,next,ubuntu)](https://skillicons.dev)
 
