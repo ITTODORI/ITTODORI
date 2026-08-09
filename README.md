@@ -1,3 +1,12 @@
+<div align="center">
+  <a href="https://github.com/elangosundar/awesome-README-templates/stargazers"><img src="https://img.shields.io/github/stars/elangosundar/awesome-README-templates" alt="Stars Badge"/></a>
+<a href="https://github.com/elangosundar/awesome-README-templates/network/members"><img src="https://img.shields.io/github/forks/elangosundar/awesome-README-templates" alt="Forks Badge"/></a>
+<a href="https://github.com/elangosundar/awesome-README-templates/pulls"><img src="https://img.shields.io/github/issues-pr/elangosundar/awesome-README-templates" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/elangosundar/awesome-README-templates/issues"><img src="https://img.shields.io/github/issues/elangosundar/awesome-README-templates" alt="Issues Badge"/></a>
+<a href="https://github.com/elangosundar/awesome-README-templates/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/elangosundar/awesome-README-templates?color=2b9348"></a>
+<a href="https://github.com/elangosundar/awesome-README-templates/blob/master/LICENSE"><img src="https://img.shields.io/github/license/elangosundar/awesome-README-templates?color=2b9348" alt="License Badge"/></a>
+</div>
+
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=40CA71&width=750&lines=I'm+a+self-taught+passionate+Software+Developer)](https://git.io/typing-svg)
 ##### Language
 [![My Skills](https://skillicons.dev/icons?i=php,ts,laravel,react,python,next,ubuntu)](https://skillicons.dev)
@@ -12,6 +21,8 @@
 
 ###### Stats
 [![GitHub Streak](https://streak-stats.demolab.com?user=iMen&theme=shadow-green)](https://git.io/streak-stats)
+
+
 
 
 <!--
