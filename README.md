@@ -9,7 +9,7 @@
 
 ## **iMen · Software Engineer**
 <!-- Typing Motion -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=40CA71&width=750&align=center&lines=I'm+a+self-taught+passionate+Software+Developer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&color=40CA71&width=750&align=center&lines=I'm+a+self-taught+passionate+Software+Developer)](https://git.io/typing-svg)
 
 <!-- 
 
@@ -61,6 +61,9 @@
 ![](https://komarev.com/ghpvc/?username=your-github-username)
 </div>
 -->
+
+![](https://github-readme-stats.shion.dev/api?username=ITTODORI&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true)<br/>
+![](https://streak-stats.demolab.com/?user=ITTODORI&theme=github_dark&hide_border=true)
 
 
 ---
