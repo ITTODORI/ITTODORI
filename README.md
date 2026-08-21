@@ -44,28 +44,6 @@
 </p>
 
 
-
-<!-- 
-##### Contribution Graph
-<img src="./contrib-heatmap.svg" width="860" alt="GitHub contribution graph" /> 
-
-
-<div align="center">
-  <a href="https://github.com/elangosundar/awesome-README-templates/stargazers"><img src="https://img.shields.io/github/stars/elangosundar/awesome-README-templates" alt="Stars Badge"/></a>
-<a href="https://github.com/elangosundar/awesome-README-templates/network/members"><img src="https://img.shields.io/github/forks/elangosundar/awesome-README-templates" alt="Forks Badge"/></a>
-<a href="https://github.com/elangosundar/awesome-README-templates/pulls"><img src="https://img.shields.io/github/issues-pr/elangosundar/awesome-README-templates" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/elangosundar/awesome-README-templates/issues"><img src="https://img.shields.io/github/issues/elangosundar/awesome-README-templates" alt="Issues Badge"/></a>
-<a href="https://github.com/elangosundar/awesome-README-templates/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/elangosundar/awesome-README-templates?color=2b9348"></a>
-<a href="https://github.com/elangosundar/awesome-README-templates/blob/master/LICENSE"><img src="https://img.shields.io/github/license/elangosundar/awesome-README-templates?color=2b9348" alt="License Badge"/></a>
-
-![](https://komarev.com/ghpvc/?username=your-github-username)
-</div>
--->
-
-![](https://github-readme-stats.shion.dev/api?username=ITTODORI&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true)<br/>
-![](https://streak-stats.demolab.com/?user=ITTODORI&theme=github_dark&hide_border=true)
-
-
 ---
 <p align="center">
   <a href="https://discord.gg/685608587996954737">
