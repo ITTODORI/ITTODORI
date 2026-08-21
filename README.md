@@ -28,7 +28,7 @@
     </td>
     <td align="center" valign="middle" width="50%">
       <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=php,ts,laravel,react,python,next,ubuntu&perline=4" alt="My Skills" />
+        <img src="https://skillicons.dev/icons?i=ts,react,py,laravel,php,next,ubuntu,arch&perline=4" alt="My Skills" />
       </a>
     </td>
   </tr>
