@@ -28,7 +28,7 @@
     </td>
     <td align="center" valign="middle" width="50%">
       <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=ts,react,py,laravel,php,next,ubuntu,arch&perline=4" alt="My Skills" />
+        <img src="https://skillicons.dev/icons?i=ts,react,py,php,flutter,next,ubuntu,arch&perline=4" alt="My Skills" />
       </a>
     </td>
   </tr>
@@ -39,7 +39,7 @@
   <img src="https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white" alt="Blender" />
   <img src="https://img.shields.io/badge/GNOME-%234A86CF.svg?style=for-the-badge&logo=gnome&logoColor=white" alt="GNOME" />
   <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
   <img src="https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white" alt="Steam" />
 </p>
 
