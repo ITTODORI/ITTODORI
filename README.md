@@ -1,11 +1,7 @@
 <div align="center">
 
-<table>
-<tr>
-<td valign="top"><img src="./avi-ascii.svg" width="370" alt="ASCII portrait" /></td>
-<td valign="top"><img src="./info-card.svg" width="490" alt="Experience, stack, highlights" /></td>
-</tr>
-</table>
+
+<img src="./profile-card.svg" width="950" alt="Experience, stack, highlights" />
 
 ## **iMen · Software Engineer**
 <!-- Typing Motion -->
