@@ -80,7 +80,7 @@ ROWS_DATA = [
     ("kv", "Data", "mySQL, Supabase"),
     ("kv", "Mobile", "Flutter, React Native"),
     ("kv", "Deploy", "Vercel, Netlify"),
-    ("kv", "Other", "Design, Video Editing, 3D Modeling"),
+    ("kv", "Other", "Design, Video Editing, 3D Animation"),
     ("gap",),
     ("sec", "Highlights"),
     ("bul", "Published packages on PyPI"),
