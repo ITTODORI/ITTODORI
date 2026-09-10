@@ -19,7 +19,7 @@
 
 <table>
   <tr>
-    <td align="center" valign="middle" width="50%">
+    <td align="center" valign="middle" width="55%">
       <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=ITTODORI&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact" alt="Top Langs" />
     </td>
     <td align="center" valign="middle" width="50%">
@@ -33,8 +33,8 @@
 <p>
   <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
   <img src="https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white" alt="Blender" />
-  <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=facebook&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/Supabase-00B03E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
   <img src="https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white" alt="Steam" />
 </p>
