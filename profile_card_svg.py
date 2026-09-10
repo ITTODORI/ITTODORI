@@ -79,7 +79,7 @@ ROWS_DATA = [
     ("kv", "Backend", "Node.js, PHP, Python"),
     ("kv", "Data", "mySQL, Supabase"),
     ("kv", "Mobile", "Flutter, React Native"),
-    ("kv", "Deploy", "Vercel"),
+    ("kv", "Deploy", "Vercel, Netlify"),
     ("kv", "Other", "Design, Video Editing, 3D Modeling"),
     ("gap",),
     ("sec", "Highlights"),
