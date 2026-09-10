@@ -68,6 +68,7 @@ GREEN = "#3fb950"
 ACCENT = "#22d3ee"
 
 ROWS_DATA = [
+    ("gap",),
     ("host",),
     ("kv", "Name", "iMen.dev"),
     ("kv", "Job", "Software Engineer"),
@@ -79,10 +80,11 @@ ROWS_DATA = [
     ("kv", "Data", "mySQL, Supabase"),
     ("kv", "Mobile", "Flutter, React Native"),
     ("kv", "Deploy", "Vercel"),
+    ("kv", "Other", "Design, Video Editing, 3D Modeling"),
     ("gap",),
     ("sec", "Highlights"),
     ("bul", "Published packages on PyPI"),
-    ("bul", "112 public repos, 266 followers"),
+    ("bul", "In nature, nothing is perfect and everything is perfect"),
 ]
 
 def esc(s):
