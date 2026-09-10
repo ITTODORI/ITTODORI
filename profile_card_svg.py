@@ -1,6 +1,7 @@
 """
 Generates a crisp, side-by-side terminal SVG banner for GitHub profile READMEs,
-with automated image preprocessing, proper ASCII aspect-ratio scaling, and clear alignment.
+with automated image preprocessing, proper ASCII aspect-ratio scaling, clear alignment,
+and a dynamic timestamp in the bottom right corner.
 prepped your photo renamed to 'photo.png' and placed in the root directory, or pass the path to your photo as the first argument.
 """
 from PIL import Image, ImageEnhance, ImageFilter
@@ -110,7 +111,6 @@ if not os.path.exists(SRC):
     if os.path.exists(RAW_SRC):
         prepare_source_image(RAW_SRC, SRC, PREP_SIZE)
     else:
-        # Fallback if raw image path is actually passed as the first argument directly to SRC
         alt_raw = sys.argv[1] if len(sys.argv) > 1 else None
         if alt_raw and os.path.exists(alt_raw):
             SRC = alt_raw
@@ -255,6 +255,8 @@ parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT}" font-size=
 parts.append(f'<rect x="{PAD+215}" y="{status_y-11:.1f}" width="7" height="13" fill="{INK}">'
              f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
              f'dur="1s" repeatCount="indefinite"/></rect>')
+parts.append(f'<text x="{TOTAL_W - PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT}" font-size="12" '
+             f'text-anchor="end">Updated: <tspan fill="{INK}">{esc(CURRENT_DATE)}</tspan></text>')
 
 parts.append("</svg>")
 svg = "".join(parts)
