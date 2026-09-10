@@ -1,6 +1,7 @@
 """
 Generates a crisp, side-by-side terminal SVG banner for GitHub profile READMEs,
-with proper ASCII aspect-ratio scaling and clear alignment.
+with automated image preprocessing, proper ASCII aspect-ratio scaling, and clear alignment.
+prepped your photo renamed to 'photo.png' and placed in the root directory, or pass the path to your photo as the first argument.
 """
 from PIL import Image, ImageEnhance, ImageFilter
 import html
@@ -8,11 +9,14 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "source-prepped.png")
+SRC = os.path.join(HERE, "..", "source-prepped.png")
+RAW_SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "photo.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "..", "profile-card.svg")
 
+# --- Preprocessing Config ---
+PREP_SIZE = (120, 120)
+
 # --- ASCII Portrait Config ---
-# Grid size adjusted to keep correct proportions and avoid overflow
 COLS = 64
 ROWS = 36
 CELL_W = 7
@@ -67,10 +71,10 @@ ROWS_DATA = [
     ("kv", "Mail", "aminalfarisi.id@gmail.com"),
     ("gap",),
     ("sec", "Stack"),
-    ("kv", "Frontend", "Typescript"),
+    ("kv", "Frontend", "Typescript, Dart"),
     ("kv", "Backend", "Node.js, PHP, Python"),
-    ("kv", "Data", "mySQL, PostgreSQL"),
-    ("kv", "Mobile", "React Native"),
+    ("kv", "Data", "mySQL, Supabase"),
+    ("kv", "Mobile", "Flutter, React Native"),
     ("kv", "Deploy", "Vercel"),
     ("gap",),
     ("sec", "Highlights"),
@@ -80,6 +84,40 @@ ROWS_DATA = [
 
 def esc(s):
     return html.escape(s)
+
+def prepare_source_image(raw_path, prepped_path, target_size=(120, 120)):
+    """Crops an image to a square, converts to RGB, and saves as prepped source."""
+    if not os.path.exists(raw_path):
+        raise FileNotFoundError(f"Raw source image not found at: {raw_path}")
+    
+    with Image.open(raw_path) as img:
+        img = img.convert("RGB")
+        w, h = img.size
+        min_dim = min(w, h)
+        left = (w - min_dim) / 2
+        top = (h - min_dim) / 2
+        right = (w + min_dim) / 2
+        bottom = (h + min_dim) / 2
+        
+        img_cropped = img.crop((left, top, right, bottom))
+        img_resized = img_cropped.resize(target_size, Image.LANCZOS)
+        img_resized.save(prepped_path, "PNG")
+    
+    print(f"Prepared source image saved to: {prepped_path}")
+
+# Automatically generate source-prepped.png if missing
+if not os.path.exists(SRC):
+    if os.path.exists(RAW_SRC):
+        prepare_source_image(RAW_SRC, SRC, PREP_SIZE)
+    else:
+        # Fallback if raw image path is actually passed as the first argument directly to SRC
+        alt_raw = sys.argv[1] if len(sys.argv) > 1 else None
+        if alt_raw and os.path.exists(alt_raw):
+            SRC = alt_raw
+        else:
+            raise FileNotFoundError(
+                f"Could not find prepped source '{SRC}' or raw source '{RAW_SRC}'."
+            )
 
 # --- Process Image with Aspect Correction ---
 im = Image.open(SRC).convert("L")
