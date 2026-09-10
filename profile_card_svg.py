@@ -5,6 +5,7 @@ and a dynamic timestamp in the bottom right corner.
 prepped your photo renamed to 'photo.png' and placed in the root directory, or pass the path to your photo as the first argument.
 """
 from PIL import Image, ImageEnhance, ImageFilter
+from datetime import datetime
 import html
 import os
 import sys
@@ -38,7 +39,7 @@ ART_W = COLS * CELL_W   # 448px
 ART_H = ROWS * CELL_H   # 432px
 
 # --- Unified Canvas Dimensions ---
-GAP = 30
+GAP = 50
 RIGHT_PANEL_W = 380
 TOTAL_W = PAD + ART_W + GAP + RIGHT_PANEL_W + PAD  # 898px
 TOTAL_H = TITLEBAR_H + ART_H + STATUS_H + 20        # 516px
@@ -53,6 +54,7 @@ CURSOR = "#c9d1d9"
 ROW_DUR = 0.08
 STAGGER = 0.035
 STATIC = bool(os.environ.get("STATIC"))
+CURRENT_DATE = datetime.now().strftime("%b %d, %Y %H:%M:%S")
 
 # --- Info Card Config ---
 HOST = "ITTODORI"
