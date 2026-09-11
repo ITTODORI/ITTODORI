@@ -48,7 +48,7 @@
     <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white" alt="Instagram" />
   </a>
   <a href="mailto:aminalfarisi.id@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="GMail" />
   </a>
   <a href="https://visitcount.itsvg.in">
     <img src="https://komarev.com/ghpvc/?username=ITTODORI&icon=0&color=0" alt="Visitor Count" />
