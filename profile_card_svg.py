@@ -2,7 +2,8 @@
 Generates a crisp, side-by-side terminal SVG banner for GitHub profile READMEs,
 with automated image preprocessing, proper ASCII aspect-ratio scaling, clear alignment,
 and a dynamic timestamp in the bottom right corner.
-prepped your photo renamed to 'photo.png' and placed in the root directory, or pass the path to your photo as the first argument.
+prepped your photo renamed to 'photo.png' and placed in the root directory, or pass the path to
+your photo as the first argument.
 """
 from PIL import Image, ImageEnhance, ImageFilter
 from datetime import datetime
@@ -55,7 +56,7 @@ CURSOR = "#c9d1d9"
 ROW_DUR = 0.08
 STAGGER = 0.035
 STATIC = bool(os.environ.get("STATIC"))
-CURRENT_DATE = datetime.now().strftime("%b %d, %Y %H:%M:%S")
+CURRENT_DATE = datetime.now().strftime("%d %b, %Y %H:%M:%S")
 
 # --- Info Card Config ---
 HOST = "ITTODORI"
