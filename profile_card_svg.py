@@ -9,6 +9,7 @@ from datetime import datetime
 import html
 import os
 import sys
+import textwrap
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "..", "source-prepped.png")
@@ -42,7 +43,7 @@ ART_H = ROWS * CELL_H   # 432px
 GAP = 50
 RIGHT_PANEL_W = 380
 TOTAL_W = PAD + ART_W + GAP + RIGHT_PANEL_W + PAD  # 898px
-TOTAL_H = TITLEBAR_H + ART_H + STATUS_H + 20        # 516px
+TOTAL_H = TITLEBAR_H + ART_H + STATUS_H + 40        # 536px
 
 BG = "#0d1117"
 BG2 = "#111722"
@@ -232,9 +233,16 @@ for i, row in enumerate(ROWS_DATA):
         inner = (f'<text x="{KEY_X}" y="{card_y:.1f}" fill="{KEY_COLOR}" font-size="12" font-weight="700">{key}</text>'
                  f'<text x="{VAL_X}" y="{card_y:.1f}" fill="{INK}" font-size="12">{val}</text>')
     elif kind == "bul":
-        txt = esc(row[1])
+        wrapped_lines = textwrap.wrap(row[1], width=45) #textwrap limits
+        txt_parts = []
+        for idx, line in enumerate(wrapped_lines):
+            safe_line = esc(line)
+            dy_val = "0" if idx == 0 else f"{LINE_H}"
+            txt_parts.append(f'<tspan x="{KEY_X+14}" dy="{dy_val}">{safe_line}</tspan>')
+        
         inner = (f'<circle cx="{KEY_X+3}" cy="{card_y-4:.1f}" r="2.5" fill="{GREEN}"/>'
-                 f'<text x="{KEY_X+14}" y="{card_y:.1f}" fill="{INK}" font-size="12">{txt}</text>')
+                 f'<text y="{card_y:.1f}" fill="{INK}" font-size="12">{"".join(txt_parts)}</text>')
+        card_y += LINE_H * (len(wrapped_lines) - 1)
     else:
         continue
 
