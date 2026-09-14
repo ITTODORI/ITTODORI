@@ -56,7 +56,7 @@ CURSOR = "#c9d1d9"
 ROW_DUR = 0.08
 STAGGER = 0.035
 STATIC = bool(os.environ.get("STATIC"))
-CURRENT_DATE = datetime.now().strftime("%d %b %Y %H:%M:%S")
+CURRENT_DATE = datetime.now().strftime("%b %d, %Y %H:%M:%S")
 
 # --- Info Card Config ---
 HOST = "ITTODORI"
